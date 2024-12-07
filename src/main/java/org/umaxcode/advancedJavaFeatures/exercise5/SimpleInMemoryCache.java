@@ -1,6 +1,8 @@
 package org.umaxcode.advancedJavaFeatures.exercise5;
 
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class SimpleInMemoryCache<K, V> {
 
@@ -14,13 +16,45 @@ public class SimpleInMemoryCache<K, V> {
 
         SimpleInMemoryCache<String, String> cache = new SimpleInMemoryCache<>();
 
-        // Put entries into the cache
-        cache.put("key1", "value1");
-        cache.put("key2", "value2");
+        ExecutorService executorService = Executors.newFixedThreadPool(5);
 
-        System.out.println("Get key1: " + cache.get("key1")); // Output: value1
+        // Task to add entries to the cache
+        Runnable writerTask = () -> {
+            for (int i = 1; i <= 10; i++) {
+                String key = "key" + i;
+                String value = "value" + i;
+                cache.put(key, value);
+                System.out.println(Thread.currentThread().getName() + " put: " + key + " -> " + value);
+            }
+        };
 
-        System.out.println("Get key2: " + cache.get("key2")); // Output: value2
+        // Task to read entries from the cache
+        Runnable readerTask = () -> {
+            for (int i = 1; i <= 10; i++) {
+                String key = "key" + i;
+                String value = cache.get(key);
+                System.out.println(Thread.currentThread().getName() + " get: " + key + " -> " + value);
+            }
+        };
+
+        // Task to remove entries from the cache
+        Runnable removerTask = () -> {
+            for (int i = 1; i <= 10; i++) {
+                String key = "key" + i;
+                cache.remove(key);
+                System.out.println(Thread.currentThread().getName() + " removed: " + key);
+            }
+        };
+
+        // Submit multiple tasks to the executor service
+        executorService.submit(writerTask);
+        executorService.submit(readerTask);
+        executorService.submit(writerTask);
+        executorService.submit(readerTask);
+        executorService.submit(removerTask);
+
+        // Shutdown the executor service after tasks are completed
+        executorService.shutdown();
 
     }
 
