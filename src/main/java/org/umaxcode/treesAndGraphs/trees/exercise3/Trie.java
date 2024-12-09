@@ -1,4 +1,4 @@
-package org.umaxcode.treesAndGraphs.exercise3;
+package org.umaxcode.treesAndGraphs.trees.exercise3;
 
 import java.util.ArrayList;
 import java.util.List;

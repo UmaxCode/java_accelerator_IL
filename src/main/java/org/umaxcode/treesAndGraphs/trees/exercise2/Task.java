@@ -1,4 +1,4 @@
-package org.umaxcode.treesAndGraphs.exercise2;
+package org.umaxcode.treesAndGraphs.trees.exercise2;
 
 public class Task implements Comparable<Task> {
 

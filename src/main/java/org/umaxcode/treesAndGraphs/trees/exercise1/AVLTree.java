@@ -1,4 +1,4 @@
-package org.umaxcode.treesAndGraphs.exercise1;
+package org.umaxcode.treesAndGraphs.trees.exercise1;
 
 public class AVLTree {
 
