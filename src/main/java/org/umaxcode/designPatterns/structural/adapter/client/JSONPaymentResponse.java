@@ -1,4 +1,4 @@
-package org.umaxcode.designPatterns.structural.client;
+package org.umaxcode.designPatterns.structural.adapter.client;
 
 public record JSONPaymentResponse(
         int statusCode,

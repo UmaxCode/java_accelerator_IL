@@ -3,9 +3,9 @@ package org.umaxcode.designPatterns.structural.adapter.adapter;
 import org.umaxcode.designPatterns.structural.adapter.service.LegacyPaymentProcessor;
 import org.umaxcode.designPatterns.structural.adapter.service.XMLPaymentRequest;
 import org.umaxcode.designPatterns.structural.adapter.service.XMLPaymentResponse;
-import org.umaxcode.designPatterns.structural.client.JSONPaymentRequest;
-import org.umaxcode.designPatterns.structural.client.JSONPaymentResponse;
-import org.umaxcode.designPatterns.structural.client.ModernPaymentProcessor;
+import org.umaxcode.designPatterns.structural.adapter.client.JSONPaymentRequest;
+import org.umaxcode.designPatterns.structural.adapter.client.JSONPaymentResponse;
+import org.umaxcode.designPatterns.structural.adapter.client.ModernPaymentProcessor;
 
 public class LegacyPaymentProcessorAdapter implements ModernPaymentProcessor {
 
