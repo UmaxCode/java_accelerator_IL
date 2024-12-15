@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/src/main/java/org/umaxcode/testing/unit/unit-test-with-mockito/pom.xml" />
         <option value="$USER_HOME$/Downloads/integration-test/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/umaxcode/testing/integration/integration-test/pom.xml" />
+        <option value="$USER_HOME$/Downloads/big-bang-integration-test/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/umaxcode/testing/integration/big-bang-integration-test/pom.xml" />
       </list>
     </option>
   </component>
