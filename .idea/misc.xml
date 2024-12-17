@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/src/main/java/org/umaxcode/testing/integration/big-bang-integration-test/pom.xml" />
         <option value="$USER_HOME$/Downloads/top-down-integration-test/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/umaxcode/testing/integration/top-down-integration-test/pom.xml" />
+        <option value="$USER_HOME$/Downloads/bottom-up-integration-test/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/umaxcode/testing/integration/bottom-up-integration-test/pom.xml" />
       </list>
     </option>
   </component>
