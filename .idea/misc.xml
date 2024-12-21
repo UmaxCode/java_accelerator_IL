@@ -15,6 +15,9 @@
         <option value="$USER_HOME$/Downloads/bottom-up-integration-test/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/umaxcode/testing/integration/bottom-up-integration-test/pom.xml" />
         <option value="$USER_HOME$/Downloads/hybrid-integration-test/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/umaxcode/testing/integration/hybrid-integration-test/pom.xml" />
+        <option value="$USER_HOME$/Downloads/simple-spring-mvc-app/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/umaxcode/springMVC/simple-spring-mvc-app/pom.xml" />
       </list>
     </option>
   </component>
