@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true # Enable service discovery integration
+      routes:
+        - id: order-service
+          uri: lb://ORDER-SERVICE # Service ID registered in Eureka
+          predicates:
+            - Path=/orders/** # Routes requests with path `/orders/**`
+        - id: user-service
+          uri: lb://PRODUCT-SERVICE # Service ID registered in Eureka
+          predicates:
+            - Path=/products/** # Routes requests with path `/users/**`
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${DISCOVERY_SERVER_URL}
+  instance:
+    hostname: ${INSTANCE_HOSTNAME}
+    instance-id: ${spring.application.name}:${random.uuid}
