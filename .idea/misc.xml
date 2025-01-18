@@ -21,6 +21,11 @@
         <option value="$USER_HOME$/Downloads/spring-mvc-todo-app/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/umaxcode/springMVC/spring-mvc-todo-app/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/umaxcode/springboot-security-oauth-actuator/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/umaxcode/microservices/order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/umaxcode/microservices/product-service/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/umaxcode/microservices/discovery-server/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/umaxcode/microservices/config-service/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/umaxcode/microservices/api-gateway/pom.xml" />
       </list>
     </option>
   </component>
