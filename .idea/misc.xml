@@ -26,6 +26,7 @@
         <option value="$PROJECT_DIR$/src/main/java/org/umaxcode/microservices/discovery-server/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/umaxcode/microservices/config-service/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/umaxcode/microservices/api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/umaxcode/crud-app-with-jenkins/pom.xml" />
       </list>
     </option>
   </component>
