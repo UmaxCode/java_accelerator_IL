@@ -9,7 +9,7 @@ pipeline {
 	}
 
 	stages {
-		stage('Checkout') {
+		stage('Git Checkout') {
 			steps {
 				// Checkout source code from your repository
 				script {
@@ -21,7 +21,7 @@ pipeline {
 				}
 			}
 		}
-		stage('Build') {
+		stage('Maven Build') {
 			steps {
 				// Build the java application using Maven
 				dir("${WORK_SPACE}"){
@@ -30,7 +30,7 @@ pipeline {
 				}
 			}
 		}
-		stage('Test') {
+		stage('Maven Test') {
 			steps {
 				// Run tests using Maven
 				dir("${WORK_SPACE}"){
