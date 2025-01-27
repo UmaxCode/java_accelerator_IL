@@ -24,6 +24,7 @@ pipeline {
 			steps {
 				// Build the java application using Maven
 				dir("${WORK_SPACE}"){
+					sh 'chmod +x mvnw'
 					sh './mvnw clean package -DskipTests'
 				}
 			}
