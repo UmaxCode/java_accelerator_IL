@@ -5,6 +5,7 @@ pipeline {
 		// Define any environment variables here if needed
 		DOCKER_HUB_REPO = "umaxcode/jenkins-lab"
 		WORK_SPACE = "src/main/java/org/umaxcode/crud-app-with-jenkins"
+		CREDENTIAL_ID = "c08c45d5-b04b-46a9-b199-c83a159ae226"
 	}
 
 	stages {
@@ -48,7 +49,7 @@ pipeline {
 		stage('Docker Push') {
 			steps {
 				// Push the Docker image to Docker Hub
-				withCredentials([usernamePassword(credentialsId: params.CREDENTIALS_ID,
+				withCredentials([usernamePassword(credentialsId: CREDENTIAL_ID,
 					usernameVariable: 'DOCKER_USERNAME',
 					passwordVariable: 'DOCKER_PASSWORD')]) {
 					sh '''
